@@ -3,9 +3,8 @@ import ReactDOM from "react-dom/client";
 // import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-// import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
-import { store } from './Store';
+import { store } from "./Store";
 import { GlobalStyle } from "./global";
 
 const root = ReactDOM.createRoot(
@@ -15,11 +14,11 @@ root.render(
   <React.StrictMode>
     {/* <BrowserRouter> */}
 
-    <Provider  store={store}>
-      <GlobalStyle/>
-    <App />
+    <Provider store={store}>
+      <GlobalStyle />
+      <App />
     </Provider>
-{/* </BrowserRouter> */}
+    {/* </BrowserRouter> */}
   </React.StrictMode>
 );
 
